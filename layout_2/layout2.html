@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout 2</title>
+    <link rel="stylesheet" type="text/css" href="css_layout2.css">
+    <script src="script_l2.js"></script>
+    <script src="tracker.js"></script>
+    <script src="clicks.js"  defer></script>
+
+</head>
+
+<body>
+
+
+<!-- Cabecera -->
+    <header>
+        <nav class="navbar">
+            <div class="cabecera">
+                <a href="contacto.html">Contacto</a>
+                <a href="nuestra-historia.html">Nuestra Historia</a>
+                <div class="carrito-contenedor">
+                    <a href="#" id="carritoTexto">Carrito de la compra</a>
+                </div>
+            </div>
+            <div class="logo">
+                <img src="tintey.png" alt="Tintey Logo">
+            </div>
+            <div class="cabecera2">
+                <a href="sesion.html">Iniciar sesión</a>
+                <a href="nuestra-historia.html">Favoritos</a>
+                <a href="productos.html">Productos</a>
+            </div>
+        </nav>
+        <div id="carritoDesplegable" class="carrito-desplegable">
+            <h3>Carrito de la compra</h3>
+            <ul id="lista-productos"></ul>
+            <br>
+            <p class="total">Total: <span id="total">0.00€</span></p>
+            <button id="vaciarCarrito">Finalizar compra</button>
+        </div>
+        <div id="confirmacion" class="confirmacion">Producto añadido a la bolsa de la compra</div>
+        
+    </header>
+
+
+
+<!-- Cuadrado rebajas -->
+
+
+
+    <main class="content">
+        <div class="rebajas">
+            Rebajas
+            <p class="Rebajas2">Hasta -50%</p>  
+        </div>
+        <p class="novedades">Novedades</p>
+        <div class="menu-categorias">
+            <a href="hombre.html">Hombre</a>
+            <a href="mujer.html">Mujer</a>
+            <a href="bebe.html">Bebé</a>
+        </div>
+
+
+
+
+
+<!-- Articulos y body -->
+
+        <section class="menu-articulos">
+            <div class="articulo">
+                <img 
+                src="https://scuffers.com/cdn/shop/files/8435661944967.2.jpg?v=1718895544&width=1728" 
+                alt="producto1">
+                <div class="info">
+                    <p class="nombre">EVDAY BROWN T-SHIRT</p>
+                    <p class="precio">39,00 EUR</p>
+                    <button  class="btn-agregar" id="btnAgregarProducto1" >Añadir al carrito</button>
+                </div>
+            </div>
+            
+
+            <div class="articulo">
+                <img 
+                src="https://scuffers.com/cdn/shop/files/8435661928998n.jpg?v=1717062013&width=540" 
+                alt="producto2">        
+                <div class="info">
+                    <p class="nombre">GY GRAY T-SHIRT</p>
+                    <p class="precio">30,00 EUR</p>
+                    <button  class="btn-agregar" id="btnAgregarProducto2" >Añadir al carrito</button>
+                </div>
+            </div>
+
+            <div class="articulo">
+                <img 
+                src="https://scuffers.com/cdn/shop/files/8435661936900.jpg?v=1715591437&width=1728" 
+                alt="producto3">
+                <div class="info">
+                    <p class="nombre">WL GREEN T-SHIRT</p>
+                    <p class="precio">32,49 EUR</p>
+                    <button  class="btn-agregar" id="btnAgregarProducto3" >Añadir al carrito</button>
+                </div>
+            </div>
+
+            <div class="articulo">
+                <img 
+                src="https://scuffers.com/cdn/shop/files/URGENTE_9.jpg?v=1694509703&width=540" 
+                alt="producto4">
+                <div class="info">
+                    <p class="nombre">GLS NAVY T-SHIRT</p>
+                    <p class="precio">39,00 EUR</p>
+                    <button  class="btn-agregar" id="btnAgregarProducto4" >Añadir al carrito</button>
+                </div>
+            </div>
+
+            <div class="articulo grande">
+                <img 
+                src="https://emestudios.com/cdn/shop/files/3TABARCA_1800x.jpg?v=1718901524"
+                alt="producto5">
+                <div class="info">
+                    <p class="nombre">LINES BLUE & RED T-SHIRT</p>
+                    <p class="precio">45,00 EUR</p>
+                    <button  class="btn-agregar" id="btnAgregarProducto5" >Añadir al carrito</button>
+                </div>
+            </div>
+
+            <div class="articulo">
+                <img 
+                src="https://scuffers.com/cdn/shop/files/8435661927755.2_1_1.jpg?v=1704992936&width=1728" 
+                alt="producto6">
+                <div class="info">
+                    <p class="nombre">NOT IBIZA T-SHIRT</p>
+                    <p class="precio">39,00 EUR</p>
+                    <button  class="btn-agregar" id="btnAgregarProducto6" >Añadir al carrito</button>
+                </div>
+            </div>
+
+            <div class="articulo">
+                <img 
+                src="https://scuffers.com/cdn/shop/products/0022jpg_7307e913-1107-47cf-b09e-fe45d049340a.jpg?v=1682333810&width=540"                            
+                alt="producto7">
+                <div class="info">
+                    <p class="nombre">BASIC WHITE T-SHIRT</p>
+                    <p class="precio">42,00 EUR</p>
+                    <button  class="btn-agregar" id="btnAgregarProducto7" >Añadir al carrito</button>
+                </div>
+            </div>
+
+            <div class="articulo">
+                <img 
+                src="https://scuffers.com/cdn/shop/files/Scuffers_00429.jpg?v=1686566638&width=540"
+                alt="producto8">
+                <div class="info">
+                    <p class="nombre">BASIC BLACK T-SHIRT</p>
+                    <p class="precio">44,00 EUR</p>
+                    <button  class="btn-agregar" id="btnAgregarProducto8" >Añadir al carrito</button>
+                </div>
+            </div>
+
+            <div class="articulo">
+                <img src="https://scuffers.com/cdn/shop/files/8435661938553_2.jpg?v=1716976037&width=1728" ç
+                alt="Producto 9">
+                <div class="info">
+                    <p class="nombre">SCUFFERS T-SHIRT</p>
+                    <p class="precio">39,00 EUR</p>
+                    <button  class="btn-agregar" id="btnAgregarProducto9" >Añadir al carrito</button>
+                </div>
+            </div>
+
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+    </main>
+</body>
+
+</html>

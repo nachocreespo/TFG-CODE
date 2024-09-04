@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout 4</title>
+    <link rel="stylesheet" type="text/css" href="css_layout4.css">
+    <script src="script_l4.js" defer></script>
+    <script src="tracker.js"></script>
+    <script src="clicks.js"  defer></script>
+</head>
+<body>
+    <div class="sidebar">
+        <nav class="navbar">
+            <a href="inicio.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="foro.html">Foro</a>
+        </nav>
+    </div>
+    <div class="main-content">
+        <header class="header-content">
+            <img src="tintey.png" alt="Logo" class="logo">
+        </header>
+
+        <main class="main-container">
+            <div class="product-container">
+                <div class="product">
+                    <div class="product-details">
+                        <p class="product-name">BROWN T-SHIRT</p>
+                        <p class="product-price">39.00€</p>
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <img src="https://scuffers.com/cdn/shop/files/8435661944967.2.jpg?v=1718895544&width=1728" alt="Producto 1" class="product-image">
+                </div>
+                <div class="product">
+                    <div class="product-details">
+                        <p class="product-name">GREY T-SHIRT</p>
+                        <p class="product-price">42.00€</p>
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <img src="https://scuffers.com/cdn/shop/files/8435661928998n.jpg?v=1717062013&width=540" alt="Producto 2" class="product-image">
+                </div>
+                
+                <div class="product">
+                    <div class="product-details">
+                        <p class="product-name">GREEN T-SHIRT</p>
+                        <p class="product-price">39.50€</p>
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <img src="https://scuffers.com/cdn/shop/files/8435661936900.jpg?v=1715591437&width=1728" alt="Producto 3" class="product-image">
+                </div>
+                <div class="product">
+                    <div class="product-details">
+                        <p class="product-name">FRUITS T-SHIRT</p>
+                        <p class="product-price">39.00#</p>
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <img src="https://scuffers.com/cdn/shop/files/8435661955796.jpg?v=1721662924&width=720"  alt="Producto 4" class="product-image">
+                </div>
+                <div class="product">
+                    <div class="product-details">
+                        <p class="product-name">NOT IBIZA T-SHIRT</p>
+                        <p class="product-price">42.00€</p>
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <img src="https://scuffers.com/cdn/shop/files/8435661927755.2_1_1.jpg?v=1704992936&width=1728"  alt="Producto 5" class="product-image">
+                </div>
+
+                <div class="product">
+                    <div class="product-details">
+                        <p class="product-name">WHITE SCF T-SHIRT</p>
+                        <p class="product-price">45.00€</p>
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <img src="https://scuffers.com/cdn/shop/products/0022jpg_7307e913-1107-47cf-b09e-fe45d049340a.jpg?v=1682333810&width=540" alt="Producto 6" class="product-image">
+                </div>
+                <div class="product">
+                    <div class="product-details">
+                        <p class="product-name">BLACK T-SHIRT</p>
+                        <p class="product-price">38.00€</p>
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <img src="https://scuffers.com/cdn/shop/files/Scuffers_00429.jpg?v=1686566638&width=540" alt="Producto 7" class="product-image">
+                </div>
+                <div class="product">
+                    <div class="product-details">
+                        <p class="product-name">GREY BLUE T-SHIRT</p>
+                        <p class="product-price">€39.00</p>
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <img src="https://scuffers.com/cdn/shop/files/8435661938553_2.jpg?v=1716976037&width=1728" alt="Producto 8" class="product-image">
+                </div>
+                
+            </div>
+        </main>
+        
+    
+        <div id="carritoDesplegable" class="carrito-desplegable">
+            <h2>Carrito</h2>
+            <p>¡El envío es gratis con tu pedido!</p>
+            <hr>
+            <ul id="lista-productos"></ul>
+            <hr>
+            <div class="total">
+                Total: €<span id="total">0.00</span>
+            </div>
+            <button id="finalizarCompra">Finalizar Compra</button>
+        </div>
+    </body>
+    </html>

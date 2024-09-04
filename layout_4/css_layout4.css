@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    width: 350px;
+    height: 100vh;
+    box-sizing: border-box;
+    position: fixed;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    margin-left: 350px; /*  barra lateral */
+    width: calc(100% - 200px);
+}
+
+.header-content {
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.header-content h1 {
+    margin: 0;
+}
+
+.header-content .logo {
+    width: 100px;
+    height: auto;
+    margin-top: 15px;
+}
+
+.main-container {
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    padding: 20px;
+    box-sizing: border-box;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    justify-content: space-between;
+}
+
+
+
+
+.product-details {
+    flex: 1;
+}
+
+.product-name{
+    margin: 0;
+    font-weight: bold;
+} 
+
+.product-price {
+    margin: 0;
+}
+
+.add-to-cart {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.add-to-cart:hover {
+    background-color: #ffd000;
+}
+
+.product-image {
+    max-width: 300px;
+    margin-left: 40px;
+}
+
+.carrito-desplegable {
+    position: fixed;
+    bottom: -200px; 
+    left: 0;
+    width: 100%;
+    background: white;
+    border-top: 1px solid #ddd;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.5);
+    padding: 20px;
+    transition: bottom 0.8s ease; 
+    box-sizing: border-box;
+    z-index: 1001;
+}
+
+.carrito-desplegable.open {
+    bottom: 0; 
+}
+
+.carrito-desplegable h2 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+.carrito-desplegable hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 10px 0;
+}
+
+.carrito-desplegable ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.carrito-desplegable .total {
+    font-size: 24px;
+    text-align: right;
+}
+
+.carrito-desplegable button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.carrito-desplegable button:hover {
+    background-color: #333;
+}
